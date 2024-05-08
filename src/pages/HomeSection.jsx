@@ -58,7 +58,7 @@ function HomeSection() {
 
   const handleColorChange = (color) => {
     setValue({ ...value, color });
-    setError(false); // Reset error when color is selected
+    setError(false); 
   };
 
 

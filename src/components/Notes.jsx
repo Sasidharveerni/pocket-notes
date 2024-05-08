@@ -15,7 +15,7 @@ function Notes({ id }) {
     const [notes, setNotes] = useState([]);
 
 
-    // console.log(id)
+ 
    
 
   
