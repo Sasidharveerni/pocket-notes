@@ -78,13 +78,7 @@ function Notes({ id }) {
                         <form onSubmit={handleSubmit}>
                             <textarea
                                 placeholder=' Enter your text here.............'
-                                style={{
-                                    width: '67vw',
-                                    height: '20vh',
-                                    marginTop: '0.5rem',
-                                    borderRadius: '0.5rem',
-                                    outline: 'none'
-                                }}
+                                className='text-sec'
                                 value={text}
                                 onChange={
                                     (e) => {
