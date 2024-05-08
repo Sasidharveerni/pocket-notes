@@ -2,37 +2,267 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-sec {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 4rem;
+}
+
+.item-1 {
+  width: 15rem;
+  /* z-index: -1; */
+}
+
+
+
+.item-2 {
+  text-align: center;
+  background-color: #DAE5F5;
+  height: 100vh;
+  width: 70vw;
+  color: #fff;
+  margin-left: 2rem;
+  /* z-index: -1; */
+}
+
+
+.note-header {
+  display: flex;
+  background-color: #001F8B;
+  float: left;
   color: white;
+  width: 70vw;
+}
+.notes-storage {
+  width: 70vw;
+  height: 65vh;
+  color: #292929;
+  overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+.form-sec {
+  background-color: #001F8B;
+  width: 70vw;
+  height: 25vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.item-2-1 {
+  text-align: center;
+  background-color: #DAE5F5;
+  height: 100vh;
+  width: 80vw;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.arrow {
+  display: none;
+}
+
+
+.add-items {
+  border-radius: 100%;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #16008B;
+  font-size: 2em;
+  font-weight: bolder;
+  position: sticky;
+  color: #fff;
+  z-index: 1;
+  float: right;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  justify-content: center;
+  width: 50vw;
+  height: 60vh;
+  background-color: #fff;
+}
+
+.modal {
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  margin: 10rem;
+  left: 10rem;
+
+}
+
+.modal-styles {
+
+  margin-left: 5rem;
+}
+
+
+.app {
+  z-index: 999;
+  background-color: #2f2f2fbf;
+}
+
+.notes-names {
+  height: 25rem;
+  overflow-y: scroll;
+}
+
+.create-btn {
+  float: right;
+  margin-right: 2rem;
+  background-color: #001F8B;
+  border-radius: 1rem;
+  border: none; 
+  outline: none; 
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+
+.color-sec {
+  display: flex;
+  margin: 1rem;
+}
+
+
+.choose-color {
+ border-radius: 50%;
+ margin-right: 1rem;
+ width: 2rem;
+ height: 2rem;
+ cursor: pointer;
+}
+
+.choose-color:hover {
+  width: 1.75rem;
+ height: 1.75rem;
+}
+
+.send-btn {
+  outline: none;
+  border: none;
+  background: none;
+  position: relative;
+  bottom: 4rem;
+  float: right;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+  background: #D9D9D9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+
+.text-div {
+  background-color: #fff;
+  width: 65vw;
+  min-height: 5vh;
+  font-size: 0.9em;
+  margin-left: 2rem;
+}
+
+.text-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.item-1-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lg-device {
+  display: block;
+}
+
+.sm-device {
+  display: none;
+}
+
+
+.nav-link {
+  text-decoration: none; 
+  background-color: none;
+  outline: none;
+}
+
+
+
+
+@media screen and (max-width: 640px){
+  .lg-device {
+    display: none ;
   }
-  to {
-    transform: rotate(360deg);
+  .sm-device {
+    display: block;
   }
+
+  .item-2{
+    display: none;
+  }
+
+  .home-sec {
+    height: 100vh;
+  }
+
+  .item-1 {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .arrow {
+    cursor: pointer;
+    display: block;
+    margin: 1rem 0rem 0rem 1rem;
+  }
+
+  .modal {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -15rem;
+
+  }
+  .app {
+    height: 100vh;
+  }
+
+  .modal-overlay {
+    justify-content: center;
+    width: 25rem;
+    height: 20rem;
+    background-color: #fff;
+  }
+
+  .notes-names {
+    height: 70vh;
+  }
+
+  
 }
