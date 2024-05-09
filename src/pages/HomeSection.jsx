@@ -71,8 +71,7 @@ function HomeSection() {
       return;
     }
     setValue((prevValue) => {
-      const incrementedId = prevValue.id + 1;
-      const newValue = { ...prevValue, id: incrementedId };
+      const newValue = { ...prevValue};
       const updatedNotesList = [...notesList, newValue];
       setNotesList(updatedNotesList);
       localStorage.setItem("NotesList", JSON.stringify(updatedNotesList));
