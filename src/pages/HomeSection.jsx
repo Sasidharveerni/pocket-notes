@@ -181,7 +181,7 @@ function HomeSection() {
           </div>
         </div>
 
-        {!notesList.length ? (<div className='item-2' style={{ zIndex: isModalOpen ? -1 : 'auto', color: '#292929' }}>
+        {!notesList[click] ? (<div className='item-2' style={{ zIndex: isModalOpen ? -1 : 'auto', color: '#292929' }}>
           <img style={{
             width: '30vw',
             marginTop: '3rem'
